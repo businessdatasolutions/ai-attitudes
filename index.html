@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics Question Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .card-container {
+            perspective: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+             min-height: 30rem;
+            width: 50rem;
+            max-width: 80vw;
+        }
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+        .card-face {
+            backface-visibility: hidden;
+        }
+         .card-back {
+            transform: rotateY(180deg);
+          }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="card-container">
+        <div id="questionCard" class="card  bg-white rounded-lg shadow-xl p-6  relative">
+             <div class="card-face front absolute inset-0 p-6 flex flex-col justify-center ">
+                 <h2 id="theme" class="text-3xl font-semibold mb-4"></h2>
+                 <p id="question" class="text-2xl text-gray-800"></p>
+            </div>
+             <div class="card-face card-back absolute inset-0 p-6 flex flex-col justify-center bg-gray-200 text-center">
+                 <p class="text-2xl">Click to flip for a new question</p>
+             </div>
+        </div>
+         <button id="flipButton" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            New Question
+        </button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
