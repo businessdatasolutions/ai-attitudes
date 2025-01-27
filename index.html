@@ -11,6 +11,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative; /* Added relative positioning */
         }
         .card {
             transition: transform 0.6s;
@@ -28,6 +29,15 @@
          .card-back {
             transform: rotateY(180deg);
           }
+          .citation-container {
+              font-size: 0.8rem;
+              max-width: 90%;
+              text-align: center;
+             margin-top: 1rem;
+          }
+          .citation-container a {
+             color: blue;
+          }
     </style>
 </head>
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
@@ -44,6 +54,12 @@
          <button id="flipButton" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Nieuwe vraag
         </button>
+       <div class="citation-container">
+          <div class="csl-bib-body" style="line-height: 1.5; margin-left: 0; text-indent: 0; display: inline;">
+            <div class="csl-entry"><i>Should AI systems behave like people? | AISI Work</i>. (n.d.). Retrieved 27 January 2025, from <a href="https://www.aisi.gov.uk/work/should-ai-systems-behave-like-people">https://www.aisi.gov.uk/work/should-ai-systems-behave-like-people</a></div>
+            <span class="Z3988" title="url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info%3Asid%2Fzotero.org%3A2&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&rft.type=webpage&rft.title=Should%20AI%20systems%20behave%20like%20people%3F%20%7C%20AISI%20Work&rft.description=We%20studied%20whether%20people%20want%20AI%20to%20be%20more%20human-like.&rft.identifier=https%3A%2F%2Fwww.aisi.gov.uk%2Fwork%2Fshould-ai-systems-behave-like-people&rft.language=en"></span>
+        </div>
+      </div>
     </div>
 
 
