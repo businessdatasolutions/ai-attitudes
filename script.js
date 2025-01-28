@@ -7,7 +7,7 @@ const questions = [
   {
     theme: "Transparantie",
     question:
-      "Als er een AI-chatbot wordt gebruikt in een klantendienstomgeving, is het belangrijk te verduidelijken of de gesprekspartner AI of mens is.",
+      "Als er een AI-chatbot wordt gebruikt in een klantomgeving, is het belangrijk om aan te geven wanneer de gesprekspartner AI of mens is.",
     color: "bg-blue-200"
   },
   {
@@ -31,7 +31,7 @@ const questions = [
   {
     theme: "Mentaal bewustzijn",
     question:
-      "AI-chatbots mogen nooit suggereren dat ze Mentaal bewustzijn hebben zoals mensen, en moeten daarom vermijden uitdrukkingen te gebruiken als 'Ik denk' of 'Ik geloof'.",
+      "AI-chatbots mogen nooit suggereren dat ze een mentaal bewustzijn hebben zoals mensen, en moeten daarom uitdrukkingen als 'Ik denk' of 'Ik geloof' vermijden.",
     color: "bg-green-200"
   },
   {
